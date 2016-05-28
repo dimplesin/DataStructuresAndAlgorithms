@@ -1,0 +1,170 @@
+
+You have N documents, where N is very large. Each document has a set of words lets say w1,w2..wm where m might differ for each document. Now you are given a list to K words lets say q1,q2Öqk.
+Write an algorithm to print the list of document which have the K words in them.
+
+-------------------------------------------------------------------------------------------------------------------------
+
+2)	You have a very large array, but the array can contain only three elements: 0,1& 2. Write an algorithm to sort the array.
+Count Sort was one option, but it didnít strike to me at that point of time. So I came up with a trivial algorithm which sorts by putting all the 2ís to the right and all the 0ís to the left, 1ís get sorted by themselves.
+
+------------------------------------------------------------------------------------------------------------------------
+
+Q1.website having several web-pages. And also there are lot many user who are accessing the web-site.
+say user 1 has access pattern : x->y->z->a->b->c->d->e->f
+user 2 has access pattern : z->a->b->c->d
+user 3 has access pattern : y->z->a->b->c->d
+user 4 has access pattern : a->b->c->d
+and list goes on for lot many users which are finite and numbered.
+Now the question is we have to determine the top 3 most occurring k-Page-sequence.
+for the above example result will be : (k=3) a->b->c , b->c->d , z->a->b.
+------------------------------------------------------------------------------------------------------------------------
+Q-1 : Outlook:
+A server receives meeting objects from multiple senders. Meeting object contains meeting time, sent time, recipient(s), sender id,etc. When recipient comes and checks the server, he/she should get requests based on meeting time and not based on sent time. Many discussions on space complexity and time complexity.
+Eg:
+
+http://algorithms.tutorialhorizon.com/counting-sort/
+12 PM      From: A  To: B,C,D   meeting time: 4 PM   meeting Id: 1
+
+12.30 PM   from: A  To C,D      meeting time : 2 PM   meeting Id:2
+
+1:PM       From B   To: C       meeting time: 1.30PM  meeting Id:3
+When C requests the server, C should get ID3 as 1st, ID2 as 2nd and ID1 as 3rd meeting.
+
+Q-1: Suppose you receive 10 million mails in 10 seconds. How will you process them and find whatis problem to receive these many mails. Discussed different approaches.
+
+Q-2: Given inference rules and some input tokens find all tokens which can be possible with given rules. Example :
+    
+Rules :
+A‡B
+B‡D
+C‡E
+D‡F
+
+Input Tokens :
+1. A,C then all A,B,C,D,E,F are possible.
+2. A then A,B,D,F are possible.
+Ask me what data structure you will use, how processing will happen. Pseudo code was required.
+
+------------------------------------------------------------------------------------------------------------------------
+
+Round 3:
+Given a 2 D array with m Entry points (which are on the edges) and n exit points which are on the edges give the total number of paths that are possible .Complete production level code was to be written
+
+Given a million list of co-ordinates in the form of longitude and latitude just as Google maps .How will you print closest k cities to a given location .
+
+3) In an auctioning system, the bidder with the highest bid wins but charged at kth highest price. Develop a system for it. Solved it using a hashmap. Was asked to write a code for the same.
+
+4) Given an array such that all elements except one are duplicate, find this element.
+
+1. You have a list of program files, how will you decide which file to compile first and which later, what data structure you will use for storing these dependencies.
+
+3. You have been given time intervals of a you tube video watched mostly. You have to find out the most watched time interval, so that you can put an ad in between that section.
+
+Given a huge file with large number of words, code a function that would take a word as input and print all anagrams of that word present in the file as output. Function has to be really really fast alsmo O(1) run time. You are allowed to take as much time and resources for pre processing the file once. But after pre-processing function should perform in O(1) time.
+
+Create a hash function for above.
+
+He then asked, another way instead of Hash ?
+
+How to optimize searching among this linked list of heads of other linked lists.
+
+Given a string with some ë?í where ? can be 0 or 1. Print all possible strings by substituting ? with 0/1.
+
+Eg: I/p Amaz??n,
+     o/p Amaz00n, Amaz10n, Amaz01n, Amaz11n     Edit distance
+-----------------------------------------------------------------------------------------------------
+Suppose you have a list of 1 billion integers, find 1 million largest integers in this list.
+List can have repeatative elements, max memory limit is 1 million numbers
+FindKLargest(arr, int start, int end, int k, int length) 
+{ 
+ i = Randomized_Partition(arr, start, end) 
+ if((length-i) < k)
+    FindKLargest(arr, start, i, k-(length-i)) 
+ else if((length-i) > k)
+    FindKLargest(arr, i+1, end, k)
+}
+-------------------------------------------------------------------------------------------------------
+
+Top 3 features I would put on a website portal if Iím launching a cab service. (Non-technical)
+
+Write code for scheduling algorithms for such a cab services provided you have a list of future bookings, and list of cabs in your fleet.
+<I was asked to write OOP paradigm code>
+
+lit24 is the closest to being correct. If the hour hand did NOT move at all until one o'clock, the answer would be 90 degrees. However, the hour hand also moves continuously. You can calculate the exact angle: the minute hand is at the 3, when it is 15 minutes past. The hour hand will be 1/4 of the way between 12 and 1.  1/4 of those 5 minutes will be 1 and 1/4 "minutes" after the 12. Each "minute" on the clock corresponds to 6 degrees of the way around the circle of the clock, if you consider the clock as 360 degrees. Therefore, 1 and 1/4 minutes is equal to 7 1/2 degrees. Subtract that from 90, and you get 82 1/2 degrees.
+
+-------------------------------------------------------------------------------------------------------------
+
+Q2. Given a dump of items sold in a file (not organized), give the top n items sold. Eg. the file looks like:
+< item1 sold >
+< item2 sold >
+< item1 sold >
+< item9 sold >
+Also, there might be same items sold but they might have different names because of different vendors. So you also need to count them together (Hint: Use ids of the items).
+Hint: Use grep command to get the counts.
+Q3. Collect email-ids of all the persons above 18 yrs in a city. He wanted to see my way of thinking and how do I use software approach towards daily life problems.
+Q4. There is a signal and two way traffic. Cars are coming @rate 10 cars/sec. Signal remains green/red for 10 secs and when the signal is green, 10 cars/min can cross the signal. You need to tell how many cars are in the line waiting behind the signal on both sides during a particular time. Say you run the simulator at time 0, now after 1 hour you need to tell the no. of cars waiting on both the sides.
+
+Q2. Given a sorted array S of characters say S= {ëaí,ídí,ígí}, you need to find the insertion point of a given character in it such that if it is less than ëaí, insertion point is 0, if between ëaí and ëdí, insertion point is 1 and if greater than ëgí, again the insertion point should be 0. O(log n) time soln was expected.
+Q4. Given a dictionary of unknown language, you need to give the sorted sequence of characters in it.
+E.g.
+Dictionary looks like:
+ABCDE
+CF
+DG
+so the output may look like: ABCDEFG
+Hint: Topological sort
+
+
+
+1) You are given a very large binary tree, return the root node of the largest BST in the given tree. Single traversal solution is expected. Implementing it on paper was little difficult than expected.
+
+2) Given an immutable(non editable) linked list and a number k, remove all occurrences of the number in the list.
+
+2. convert HEAD -> TAIL and print all words in successful transformation path.
+    constraints: Only one character can be changed at a time.
+Transformed words should be valid. It can be checked using dictionary.
+
+
+
+
+
+
+Q1. Given a file having many words. Given K, find the words appearing >=K times. Lots of discussion was there, discussed many approaches.
+
+
+
+Q4. Write program to find max size BST from given binary tree. Algorithm and full working code was required for all the problems. Discussed space and time complexity of every problem.
+
+
+
+
+
+
+2.	Print a pascal tree .	
+
+2.	A stream of data is coming. Maintain records in a page and mechanism to see previous and next page. (Concept of Doubly Linked List)
+
+
+
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q2. Given a tree where there are three pointers (left_pointer, right_pointer and a next_right_pointer). Left and right pointers are set like that of any general binary tree. We were asked to set the next_right_pointer to the next node in the level order traversal for the same level. This implies means for the last node in every level it will be null for rest it will be pointer to the next node in level order traversal.
+void connect(Node* p) {
+  if (!p) return;
+  if (p->leftChild)
+  p->leftChild->nextRight = p->rightChild;
+  if (p->rightChild)
+    p->rightChild->nextRight = (p->nextRight) ?
+                               p->nextRight->leftChild :
+                               NULL;
+  connect(p->leftChild);
+  connect(p->rightChild);
+}
+
+
+Q3. Basically it was from snakes and ladders game. There is n x n matrix and you are at starting position. What is the no. of ways to reach n-square position if your next move will be dependent on number on dice? You have been given information about ladders (there are no snakes J ). I used DP.
+
+Q1. Write an efficient program to count number tree structures that can be made using n number of nodes.
+Basically T(n)=summation (T(i) * T(n-i-1)). I used DP as there are a lot of sub-problems used again and again. O(n2) .
+

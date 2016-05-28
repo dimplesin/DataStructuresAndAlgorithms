@@ -1,0 +1,148 @@
+F2F Round 1:
+1. Given a dependency where for java packages p1,p2,p3
+p1:{p2,p3}
+p2:{p3}
+p3:{}
+This means p1 can be compiled when compilation of p2 and p3 done
+p2 can compile when p3 is compiled
+p3 can start as it does not have any dependence.
+Figure out strategy to find the order of compilation of processes.
+Ans:Topological sorting
+2. Discussion on project
+      Asked all concept related to my final year project.
+3. Current project in company
+      Challenges faced at company
+
+2F Round 2:
+1. Given a binary tree print its side view from left from bottom to top and right side view as up to downward .
+Eg. For image 1 output will be 20,30,50,90,100
+1
+
+and for Example 2( image 2) output should be 6,3,1,2,5,10,7,4,6
+binarytree_example
+
+2. Given a string find largest palindrome sub string in it.
+I gave him http://www.geeksforgeeks.org/longest-palindromic-substring-set-2/ this answer .
+then he asked me using DP
+http://www.geeksforgeeks.org/longest-palindrome-substring-set-1/
+
+3. What is virtual memory?
+4. What is paging in OS?
+
+2F Round 3:
+1. Why are you looking for change in 6 months of experience .
+2. Discussion on how to send notification to friends when a user post on social network like facebook
+The discussion was on when to load friend list of user and he was expecting we should load friend list when user login.
+
+2F Round 4:
+1. Discussion on current project challenges faced
+Situation when you have to take decision in absence of your team lead/Manager
+2. Why are you looking for change in 6 months of experience
+
+3. Given a special binary tree structure given in image 3
+A node have 3 node pointers left,right and next
+Two adjacent node share there left and right as shown in tree
+Give tree whose node are set with next pointer as null.
+you have to set the next pointer as shown in the figure .
+If any node is null then the next of its prev node should be next of that eg. a -> b -> c (a’s next is b ,b’s next is c) if b is null then a’s next should be c.
+tree1
+4. What is virtual memory?
+5. What is segmentation fault?
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Round 1(Online Round):
+1. Given two linked lists. Add them.
+e.g 1–>2–>3
+3–>4
+Output: 1–>5–>7
+
+2. Find if the binary tree has the given sum.
+
+I cleared the online coding round and I was asked to come down for the face to face discussions.
+
+
+Round 2(F2F):
+1. Find if the given binary tree is height balanced.
+
+
+Round 3(F2F):
+1. Find if the given tree is the subtree of the big tree.
+2. Given a sorted matrix (row-wise and column wise) , find kth smallest element.
+3. Given an array. Pop min element in O(1) time.
+4. Implement increment operator for the array.
+
+
+Round 4(F2F):
+1. Print the level-order traversal from bottom to up in a given binary tree.
+2. What is process and thread?
+3. What is copy constructor?
+4. Design parking lot.
+
+
+Round 5(F2F) (Hiring manager round):
+1. Questions on achievements, challenges faced, area of improvement.,etc.
+2. Given a file with millions of URLs. Some URLs repeating , some unique. Find the first unique URL.
+
+---------------------------------------------------------------------------------------------------------------------------
+
+
+
+Telephonic Round:
+1. Inserting an element into a BST
+2. A array is increasing and then decreasing find the point where it stops increasing.
+
+F2F Round 1:
+1. Replace all the elements in the array with its next highest element to its right
+Expected O(n) Solution.
+
+2. Given a binary tree and a value k. A path is called heavy path if the sum of the elements in the path (path from root to leaf) > k remove all the paths from the tree which are not heavy i.e., tree should contain only heavy paths.
+
+F2F Round 2:
+1. Given a array find all the triplets which satisfy the triangle preoperty(sum of 2 sides should be greater than third side)
+Sol: sort then o(n^2 log(n)) using binary search.
+
+2. Given a dependency where for example process p1,p2,p3
+p1:{p2,p3}
+p2:{p3}
+p3:{}
+This means p1 starts once p2 and p3 are complete
+p2 starts p3 is complete
+p3 can start as it does not have any dependence.
+Figure out strategy to find the order of execution of processes.
+Ans:Topological sorting.
+
+F2F Round 3:
+1. Design a stack with push pop and find min operations in o(1) time.
+Ans:can be done using 2 Stacks
+
+2. Given an input string and a dictionary of words, find out if the input string can be segmented into a space-separated sequence of dictionary words.
+Solution http://www.geeksforgeeks.org/dynamic-programming-set-32-word-break-problem/
+
+F2F Round 4:
+Discussion of projects and current work experience.
+Diameter of a binary tree in o(n).
+First devised o(n^2) then optimized to o(n)
+
+
+
+-------------------------------------------------------------------------------------------------------------------------
+
+
+You have N documents, where N is very large. Each document has a set of words lets say w1,w2..wm where m might differ for each document. Now you are given a list to K words lets say q1,q2…qk.
+Write an algorithm to print the list of document which have the K words in them.
+
+This question required a number of hints. I finally came up with the solution of creating a combined trie for all the documents. After listening to my solution he said that it was good but could have been better with B-Tree. I told that as of now I am not able to memorize the concept of B-Tree and he said he was satisfied with the trie solution that I had given.
+
+Face To Face 4:
+1)
+a)	What are various types of tree traversals and diff between them?
+b)	Which of the traversals would you require for creating the tree (unique) back?
+2)	You have a very large array, but the array can contain only three elements: 0,1& 2. Write an algorithm to sort the array.
+Count Sort was one option, but it didn’t strike to me at that point of time. So I came up with a trivial algorithm which sorts by putting all the 2’s to the right and all the 0’s to the left, 1’s get sorted by themselves.
+
+------------------------------------------------------------------------------------------------------------------------
+
+ There are millions of string in the database. How would you store them for efficient searching. You also need to print all anagrams together many times, now how would you store them and insert if a new string is added to database ?
+
